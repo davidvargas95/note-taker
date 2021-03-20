@@ -41,7 +41,22 @@ app.post("/api/notes", function (req, res) {
 });
 
 
+// This allows the user to delete a note
+app.delete("/api/notes/:id", function (req, res) {
+    let noteTag = req.params.id;
 
+    fs.readFile("./db/db.json", "utf8", function (error, data) {
+        if(error) throw error; 
+        const note = JSON.parse(data);
+        const noteList = note.filter(note => note.id !== noteTag)
+        const updateList = JSON.stringify(noteList);
+
+        fs.writeFile("./db/db.json", updateList, (error) => {
+            if(error) throw error;
+            res.json(note);
+        });
+    });
+});
 
 
 // Routes

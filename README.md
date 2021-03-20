@@ -1,10 +1,13 @@
   # Note Taker
 
   ## Links
+  [Deployed Application](https://glacial-coast-85971.herokuapp.com/)<br>
+  [GitHub Repo](https://github.com/davidvargas95/note-taker)
+
   --
 
   ## Description
-  This app allows a user to easily create, edit, and delete notes. On the right side of the screen, they will have inputs to give a new note a title and to compose the body of the note. The left side of the screen will show their created notes with a delete button attached.
+  This app allows a user to easily create and delete notes. On the right side of the screen, they will have inputs to give a new note a title and to compose the body of the note. The left side of the screen will show their created notes with a delete button attached.
 
   --
   ## Installation
@@ -20,7 +23,10 @@
 
   --
   ## Testing
-  Write, edit, and delete a lot of notes!
+  Write and delete a lot of notes!<br>
+  <img src="./public/assets/images/capture1.png" alt="cap1" style="height: 350px;"/>
+  <br>
+  <img src="./public/assets/images/capture2.png" alt="cap2" style="height: 350px;"/>
 
   --
   ## Questions
